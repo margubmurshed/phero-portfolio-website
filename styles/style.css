@@ -1,0 +1,108 @@
+/* Global CSS */
+* {
+  font-family: Open Sans;
+}
+
+:root {
+  --primary: #fd6e0a;
+  --dark-1: #181818;
+  --dark-2: #474747;
+  --dark-3: #757575;
+  --light-pink: #fff8f3;
+}
+
+.btn-primary {
+  padding: 18px 36px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary-outlined {
+  padding: 18px 36px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* header styles */
+
+header {
+  background-color: var(--light-pink);
+  background-image: url("../images/header_bg.png"), url(../images/developer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, center left;
+}
+
+/* navigation styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+nav .nav-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+nav .nav-title span {
+  color: var(--primary);
+}
+
+nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .nav-list li a {
+  color: var(--dark-2);
+  font-size: 20px;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-sub-title {
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--dark-2);
+  line-height: 60px;
+}
+
+.banner-title {
+  color: var(--dark-1);
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 115px;
+  margin-bottom: 20px;
+}
+
+.banner-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--dark-3);
+  margin-bottom: 30px;
+}
+
+.banner-left {
+  margin-left: 230px;
+}
+
+.banner-right {
+  margin-right: 100px;
+}
