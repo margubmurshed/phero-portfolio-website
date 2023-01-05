@@ -30,6 +30,28 @@
   border: 1px solid var(--primary);
 }
 
+.section {
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 130px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--dark-1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--dark-3);
+  text-align: center;
+}
+
 /* header styles */
 
 header {
@@ -105,4 +127,37 @@ nav .nav-list li a {
 
 .banner-right {
   margin-right: 100px;
+}
+
+.banner-right img {
+  position: relative;
+  margin-bottom: -5px;
+}
+
+/* about styles */
+.about {
+  background-color: var(--light-pink);
+  padding: 130px 150px;
+  border-radius: 10px;
+}
+
+.about-info {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about-info-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-3);
+}
+
+.about-info-description {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--dark-2);
+  margin-bottom: 30px;
 }
