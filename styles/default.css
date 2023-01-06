@@ -15,3 +15,13 @@ ul {
 button {
   border: none;
 }
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
