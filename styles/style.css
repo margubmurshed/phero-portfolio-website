@@ -12,18 +12,18 @@
 }
 
 .btn-primary {
-  padding: 18px 36px;
+  padding: 15px 30px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   background-color: var(--primary);
   color: #fff;
 }
 
 .btn-primary-outlined {
-  padding: 18px 36px;
+  padding: 15px 30px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   background: none;
   color: var(--primary);
@@ -46,7 +46,6 @@
 }
 
 .section-description {
-  font-size: 18px;
   line-height: 30px;
   color: var(--dark-3);
   text-align: center;
@@ -67,6 +66,7 @@ header {
   background-image: url("../images/header_bg.png"), url(../images/developer.png);
   background-repeat: no-repeat;
   background-position: bottom right, center left;
+  background-size: auto, 100px auto;
 }
 
 /* navigation styles */
@@ -76,13 +76,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   max-width: 1140px;
-  padding: 50px 0;
+  padding: 20px 0;
   margin: 0 auto;
 }
 
 nav .nav-title {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 nav .nav-title span {
@@ -97,7 +97,6 @@ nav .nav-list {
 
 nav .nav-list li a {
   color: var(--dark-2);
-  font-size: 20px;
 }
 
 /* banner styles */
@@ -109,7 +108,7 @@ nav .nav-list li a {
 
 .banner-sub-title {
   font-weight: 600;
-  font-size: 45px;
+  font-size: 28px;
   color: var(--dark-2);
   line-height: 60px;
 }
@@ -117,24 +116,23 @@ nav .nav-list li a {
 .banner-title {
   color: var(--dark-1);
   font-weight: 700;
-  font-size: 85px;
-  line-height: 115px;
+  font-size: 60px;
+  line-height: 80px;
   margin-bottom: 20px;
 }
 
 .banner-description {
-  font-size: 18px;
   line-height: 30px;
   color: var(--dark-3);
   margin-bottom: 30px;
 }
 
 .banner-left {
-  margin-left: 230px;
+  margin-left: 50px;
 }
 
 .banner-right {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .banner-right img {
@@ -145,7 +143,7 @@ nav .nav-list li a {
 /* about styles */
 .about {
   background-color: var(--light-pink);
-  padding: 130px 150px;
+  padding: 50px;
   border-radius: 10px;
 }
 
@@ -157,7 +155,7 @@ nav .nav-list li a {
 }
 
 .about-info-title {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   color: var(--dark-3);
 }
@@ -167,7 +165,6 @@ nav .nav-list li a {
   font-weight: 700;
   line-height: 30px;
   color: var(--dark-2);
-  margin-bottom: 30px;
 }
 
 /* What I Do styles */
@@ -281,4 +278,80 @@ footer {
   font-weight: 400;
   line-height: 28px;
   color: var(--dark-3);
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    background-image: none;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  nav .nav-list {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-right img {
+    width: 100%;
+  }
+
+  .banner-left {
+    margin: 20px;
+  }
+
+  .banner-right {
+    margin: 20px;
+  }
+
+  .section {
+    margin: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .title-description-padding {
+    padding: 0 10px;
+  }
+
+  .about {
+    padding: 50px 10px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .what-i-do-skills {
+    flex-direction: column;
+  }
+
+  .resume-sub-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .resume-title {
+    font-size: 18px;
+  }
+
+  .resume-sub-title {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+  .footer {
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
 }
